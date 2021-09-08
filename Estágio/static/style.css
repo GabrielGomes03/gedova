@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: Big Noodle;
+    src: url(/fontes/bignoodletitling/big_noodle_titling.ttf);
+}
+
+span a {
+    position: relative;
+    left: 80px;
+    font-size: 50px;
+}
+
+#button-header {
+    background: #fff;
+    color: #0d6efd;
+    transition: 0.5s;
+}
+
+
+.dropdown-item {
+    color: #0d6efd;
+}
+
+#button-header:hover {
+    background: #0d6efd;
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+}
+.nav-link:hover {
+    color: #fff;
+    opacity: 0.7;
+}
+
+header p {
+    opacity: 0;
+    position: relative;
+    left: 90px;
+}
+
+header p a {
+    font-size: 50px;
+}
+
+a {
+    letter-spacing: 3px;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    opacity: 0.7;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Config. conteúdo central (Side Nav e Conteúdo pricnipal. */
+.container-linha {
+    display: flex;
+    flex-flow: row;
+    min-height: 750px;
+}
+
+.conteudo-central {
+    display: block;
+    width: 100%;   
+}
+
+.sidenav {
+    background: #0d6efd;
+    width: 16%;
+}
+
+.sidenav li {
+    letter-spacing: 3px;
+    margin: 30px 0px 20px 0px ;
+}
+
+
+/* Configs. Da página das fotos de animações...*/
+
+.animacoes {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.animacoes img {
+    width: 50%;
+}
+
+.animacoes li {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+/* Responsividade */
+@media (max-width:992px) {
+    .container-linha {
+        display: flex;
+        flex-flow: row;
+    }
+    .conteudo-central {
+        width: 100%;
+    }
+
+    .sidenav {
+        width: 20%;
+        font-size: 17px;
+    }
+}
+
+@media (max-width:768px) {
+    .container-linha {
+        display: block;
+    }
+    .conteudo-central {
+        width: 100%;
+    }
+
+    .sidenav {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .sidenav li {
+        display: inline-block;
+        border-right: 1px solid #ccc;        
+    }
+}
+
+@media (max-width:576px) {
+    .container-linha {
+        display: block;
+    }
+
+    .conteudo-central {
+        width: 100%;
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    .sidenav li {
+        display: inline-block;
+        border-right: 1px solid #ccc;        
+    }
+    .animacoes li {
+        margin-left: -15px;
+        width: 100%;
+        display: block;
+    }
+
+    .nav-list {
+        width: 70vw;
+    }
+
+}
+
+/*Fim da Responsividade*/
+
+/* Final das configs Gerais do CSS e do Header*/
+
+
+
+/* Classes para o JS*/
+
+.invisivel {
+    display: none;
+}
+
+
+header nav img {
+    width: 10%;
+}
+
+#nav-header {
+    margin-left: auto;
+}
+
+#nav-header li {
+    margin: 0 20px;
+}
+
+#nav-lateral li {
+    list-style: none;
+    font-size: 16px;
+} 
+
+
+footer {
+    text-align: center;
+    background: #0d6efd;
+    color: #fff;
+    padding: 15px;
+}
+
+
